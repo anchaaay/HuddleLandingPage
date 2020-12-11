@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    padding: 40px 40px 20px 64px;
+}
+
+.img-logo {
+    width: 16%;
+    height: auto;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    padding-right: 88px;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    padding-right: 48px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+img.illustration {
+    width: 45%;
+    height: auto;
+}
+
+.caption {
+    padding-top: 10px;
+    width: 40%;
+}
+
+button{
+    background-color: #ddd;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-weight: 400;
+    padding: 10px 60px 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px 0px #3d405b;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+footer {
+    margin-left: auto;
+    width: 100%;
+}
+
+.footer {
+    margin-left: auto;
+    width: 20%;
+}
+
+img.twitter, img.facebook, img.instagram {
+    margin: 5px;
+    width: 16%;
+    height: auto;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    img.illustration {
+        padding-top: 20px;
+        width: 70%;
+        height: auto;
+    }
+
+    .logo {
+        padding: 40px 40px 32px 48px;
+    }
+
+    .img-logo {
+        width: 40%;
+        height: auto;
+    }
+
+    .caption {
+        margin: 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    h1, p {
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 {
+        padding-top: 24px;
+        font-size: 24px;
+    }
+
+    p {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    button {
+        width: 70%;
+    }
+
+    footer {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+    }
+
+    img.twitter, img.facebook, img.instagram {
+        width: 22%;
+    }
+}
